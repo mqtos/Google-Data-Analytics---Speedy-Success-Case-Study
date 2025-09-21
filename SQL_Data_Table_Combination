@@ -1,0 +1,25 @@
+#Create a talbe in SQL using data from the last 12 months
+CREATE TABLE cyclistic.`full_year_data` AS (
+    SELECT * FROM cyclistic.`202409_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202410_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202411_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202412_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202501_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202502_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202503_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202504_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202505_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202506_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202507_divvy_tripdata`
+    UNION ALL
+    SELECT * FROM cyclistic.`202508_divvy_tripdata`)
